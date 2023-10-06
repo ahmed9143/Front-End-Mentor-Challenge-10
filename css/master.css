@@ -1,0 +1,114 @@
+/* Apply a box-sizing reset to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style for the entire body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    margin: 0; /* Remove default margin to ensure consistency */
+}
+
+/* Container styles */
+.container {
+    width: 100%; /* Make the container full-width */
+    max-width: 650px; /* Set a maximum width for the container */
+    height: 500px; /* Let the container adjust its height based on content */
+    margin: 20px auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center;
+    justify-content: center;
+    box-shadow:  10px ;
+}
+
+/* Style for the first part of the container */
+.part1 {
+    padding: 15px;
+    margin: 15px;
+}
+
+.part1 h4 {
+    color: hsl(71, 73%, 54%);
+}
+
+.part1 p {
+    opacity: 0.8;
+}
+
+.part1 h3 {
+    font-size: 22px;
+    color: hsl(179, 62%, 43%);
+}
+
+/* Flex container for the second and third parts */
+.two-parts {
+    display: flex;
+}
+
+/* Style for the second part */
+.part2 {
+    width: 50%; /* Adjust the width as needed */
+    height: 300px;
+    color: white;
+    background-color: hsl(179, 62%, 43%); /* Match the color of h3 in .part1 */
+    padding: 15px;
+}
+
+.part2 h4,h3,p {
+    padding: 10px;
+}
+
+.part3 h3,p {
+    padding: 10px;
+}
+
+
+.part2 p {
+    width: 100%;
+}
+
+.part2 h4 b {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.part2 h4 {
+    color: white;
+}
+
+.part2 button {
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+/* Style for the third part */
+.part3 {
+    width: 50%; /* Adjust the width as needed */
+    height: 300px;
+    color: white;
+    background-color: hsl(179, 48%, 55%);
+    padding: 15px;
+
+}
+
+.part3 p {
+    width: 100%;
+}
+
+.part3 h3 {
+    font-weight: bold;
+}
